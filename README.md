@@ -64,3 +64,50 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 🏁 Getting started 
+### 💾 Installation
+**Step 1**
+
+Install Composer by downloading it From the [Official Website](https://getcomposer.org/download/) if you don't have it installed already
+
+**Step 2**
+
+Once you have Composer installed, open the terminal and navigate to the directory where you want to create your new Laravel project.
+
+**Step 3**
+
+Run the following command to create a new Laravel project:
+```bash
+composer create-project --prefer-dist laravel/laravel project-name
+```
+Make sure to replace "project-name" with the name of the project you want to create.
+After running this command, Composer will download and install the latest version of Laravel, and create a new project with the specified name in the current directory.
+
+**Step 4**
+
+Open up XAMPP and Start Up Apache and MySQL. You can download it from the [XAMPP Website](https://www.apachefriends.org/download.html) if you don't have it installed already
+
+**Step 5**
+
+Click the admin Button on the row of MySQL to open up PHPmyAdmin.
+
+**Step 6**
+
+Click new on the right hand side of the page to make a new database. Make sure to name it according to your project name you made using the terminal.
+
+**Step 7**
+
+After Making the new database, open up your project in VSC or directly from file explorer and open up the terminal and run the following command:
+```bash
+php artisan migrate
+```
+This will migrate any database that was made in the folder into the database in PHPmyAdmin.
+
+**Step 8**
+
+You can then navigate into your created project directory and run the following command to start the development server:
+```bash
+php artisan serve
+```
+This will open a local server in which you can see your progress on your webpage.
